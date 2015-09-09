@@ -1,335 +1,448 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>LEAP</title>
+    <title>LEAP</title>
 
-		<meta name="description" content="Presentation about the OUP Lexical Engine and Platform">
-		<meta name="author" content="Matt Kohl">
+    <meta name="description" content="Presentation about the OUP Lexical Engine and Platform">
+    <meta name="author" content="Matt Kohl">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-		<link rel="stylesheet" href="css/d3.css">
+    <link rel="stylesheet" href="css/d3.css">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
-
-		<!--<script>-->
-		  <!--if( window.location.search.match( /print-pdf/gi ) ) {-->
-			<!--var link = document.createElement( 'link' );-->
-			<!--link.rel = 'stylesheet';-->
-			<!--link.type = 'text/css';-->
-			<!--link.href = 'reveal.js/css/print/pdf.css';-->
-			<!--document.getElementsByTagName( 'head' )[0].appendChild( link );-->
-		  <!--}-->
-		<!--</script>-->
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section><!---------------- slide ------------------------->
-					<h1>LEAP</h1>
-					<h3>Lexical Engine and Platform</h3>
-					<p>
-						<small>Presentation by <a href="http://mattkohl.com" target="_blank">Matt Kohl</a> / <a href="http://twitter.com/mattkohl" target="_blank">@mattkohl</a></small>
-					</p>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h1>Our Challenge:</h1>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2>Integrate, optimize, &amp; deliver</h2>
-                    <h2><strong>OUP lexical data</strong></h2>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2>We have <strong>lots</strong> of lexical data!</h2>
-                    <h3>Dictionaries</h3>
-					<h3>Thesauri</h3>
-					<h3>Morphology</h3>
-					<h3>Usage examples</h3>
-					<h3>etc!</h3>
-                    <h4 style="margin-top: 1em;">( in various formats, mostly XML )</h4>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2>Our data is <strong>linked</strong>!</h2>
-					<h6 class="fragment">(well, a lot of it is)</h6>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2>But...</h2>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h3>Our resources are <strong>spread out</strong></h3>
-                    <h3>&amp;</h3>
-                    <h3>Managing links between XML docs is <strong>painful</strong></h3>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2>Also...</h2>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h3>We're delivering</h3>
-                    <h3><strong>manual data dumps</strong></h3>
-                    <h3><strong><i class="fa fa-thumbs-down"></i></strong></h3>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h1>Our Solution:</h1>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h1>Linked Data!</h1>
-					<h1 class="fragment" style="margin-top: 1em;">APIs!!</h1>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2><strong>Why Linked Data?</strong></h2>
-					<h3>Data integration at scale</h3>
-					<h3>Graph model</h3>
-					<h3>Linked Data principles</h3>
-                    <h3>Inferencing</h3>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2><strong>Why APIs?</strong></h2>
-					<h3>Tiered access</h3>
-					<h3>Usage analytics</h3>
-					<h3>Different views on the data</h3>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h1>Our Status:</h1>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-                    <h4>We have written an</h4>
-					<h2><strong>Ontology</strong></h2>
-                    <h4>in OWL DL</h4>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h4>We built an</h4>
-                    <h2><strong>XML</strong><i class="fa fa-long-arrow-right"></i><strong>RDF</strong></h2>
-					<h4>transformation framework</h4>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-                    <h4>We've launched our</h4>
-					<h2><strong>API version 1.0</strong></h2>
-                    <h4>[Swagger screenshot or summat]</h4>
-                    <!--<h4 class="fragment">With some dictionary-specific endpoints to start:</h4>-->
-                    <!--<div class="fragment">-->
-                        <!--<h4><strong>Search</strong> headwords</h4>-->
-                        <!--<h4><strong>Retrieve</strong> an entry</h4>-->
-                        <!--<h4><strong>Add</strong> an entry</h4>-->
-                        <!--<h4><strong>Delete</strong> an entry</h4>-->
-                    <!--</div>-->
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h4>We've solicited some</h4>
-                    <h2><strong>Early-access testing</strong></h2>
-					<h4>to kick the tires</h4>
-                    <h4>on the data model & APIs</h4>
-				</section>
-
-				<section><!---------------- slide ------------------------->
-					<h2><strong>Next Steps:</strong></h2>
-					<h4>Develop new API endpoints</h4>
-					<h4>Continue moving our XML data-sets into RDF</h4>
-					<h4>Increase linking within our data-sets</h4>
-					<h4>Link out to other data-sets (DBPedia, WordNet, BabelNet, etc.)</span></h4>
-				</section>
-
-				<!--<section class="onto">&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; d3 slide -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-					<!--<h2>This slide uses <strong>D3</strong></h2>-->
-				<!--</section>-->
-
-                <section><!---------------- slide ------------------------->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UhiiMa79f2I" frameborder="0" allowfullscreen></iframe>
-                </section>
-
-			</div><!-- slides -->
-		</div><!-- reveal -->
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
-
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-
-					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
-
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
-
-      var links = [
-      {source: "derives From", target: "isEtymologicalRelationOf", type: "subPropertyOf"},
-      {source: "has Antonym", target: "owl#IrreflexiveProperty", type: "type"},
-      {source: "has Antonym", target: "owl#SymmetricProperty", type: "type"},
-      {source: "has Antonym", target: "hasClassicalRelation", type: "subPropertyOf"},
-      {source: "has Antonym", target: "hasSynonym", type: "propertyDisjointWith"},
-      {source: "has Association", target: "owl#IrreflexiveProperty", type: "type"},
-      {source: "has Association", target: "owl#SymmetricProperty", type: "type"},
-      {source: "has Association", target: "hasNon-ClassicalRelation", type: "subPropertyOf"},
-      {source: "has Canonical Form", target: "owl#FunctionalProperty", type: "type"},
-      {source: "has Canonical Form", target: "hasLexicalForm", type: "subPropertyOf"}
-      ];
-
-      var nodes = {};
-
-      // Compute the distinct nodes from the links.
-      links.forEach(function(link) {
-      link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
-      link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
-      });
-
-      var width = 1000,
-      height = 600;
-
-      var force = d3.layout.force()
-      .nodes(d3.values(nodes))
-      .links(links)
-      .size([width, height])
-      .linkDistance(60)
-      .charge(-300)
-      .on("tick", tick)
-      .start();
-
-      var svg = d3.select(".onto").append("svg")
-      .attr("width", width)
-      .attr("height", height);
-
-      var link = svg.selectAll(".link")
-      .data(force.links())
-      .enter().append("g")
-	  .attr("class", "gLink")
-	  .append("line")
-      .attr("class", "link");
-
-      var node = svg.selectAll(".node")
-      .data(force.nodes())
-      .enter().append("g")
-      .attr("class", "node")
-      .on("mouseover", mouseover)
-      .on("mouseout", mouseout)
-      .call(force.drag);
-
-      node.append("circle")
-      .attr("r", 8);
-
-      node.append("text")
-      .attr("x", 12)
-      .attr("dy", ".35em")
-      .text(function(d) { return d.name; });
-
-        // Append text to Link edges
-	  var linkText = svg.selectAll(".gLink")
-		.data(force.links())
-	  	.append("text")
-	    .attr("x", function(d) {
-	        if (d.target.x > d.source.x) { return (d.source.x + (d.target.x - d.source.x)/2); }
-	        else { return (d.target.x + (d.source.x - d.target.x)/2); }
-	    })
-		.attr("y", function(d) {
-	        if (d.target.y > d.source.y) { return (d.source.y + (d.target.y - d.source.y)/2); }
-	        else { return (d.target.y + (d.source.y - d.target.y)/2); }
-	    })
-	    .attr("fill", "Black")
-		.style("font", "normal 9px Arial")
-		.attr("dy", ".35em")
-		.text(function(d) { return d.type; });
-
-      function tick() {
-      link
-      .attr("x1", function(d) { return d.source.x; })
-      .attr("y1", function(d) { return d.source.y; })
-      .attr("x2", function(d) { return d.target.x; })
-      .attr("y2", function(d) { return d.target.y; });
-
-      node
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-
-	  linkText
-	    .attr("x", function(d) {
-	        if (d.target.x > d.source.x) { return (d.source.x + (d.target.x - d.source.x)/2); }
-	        else { return (d.target.x + (d.source.x - d.target.x)/2); }
-	    })
-	    .attr("y", function(d) {
-	        if (d.target.y > d.source.y) { return (d.source.y + (d.target.y - d.source.y)/2); }
-	        else { return (d.target.y + (d.source.y - d.target.y)/2); }
-	    });
-	  }
-
-
-      function mouseover() {
-      d3.select(this).select("circle").transition()
-      .duration(750)
-      .attr("r", 16);
-      }
-
-      function mouseout() {
-      d3.select(this).select("circle").transition()
-      .duration(750)
-      .attr("r", 8);
-      }
-
+        document.write('<link rel="stylesheet" href="css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
     </script>
 
+    <!--<script>-->
+    <!--if( window.location.search.match( /print-pdf/gi ) ) {-->
+    <!--var link = document.createElement( 'link' );-->
+    <!--link.rel = 'stylesheet';-->
+    <!--link.type = 'text/css';-->
+    <!--link.href = 'reveal.js/css/print/pdf.css';-->
+    <!--document.getElementsByTagName( 'head' )[0].appendChild( link );-->
+    <!--}-->
+    <!--</script>-->
 
-	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section><!---------------- slide ------------------------->
+            <h1>LEAP</h1>
+
+            <h3>Lexical Engine and Platform</h3>
+
+            <p>
+                <small>Presentation by <a href="http://mattkohl.com" target="_blank">Matt Kohl</a> / <a
+                        href="http://twitter.com/mattkohl" target="_blank">@mattkohl</a></small>
+            </p>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h1>Our Challenge:</h1>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2>Integrate, optimize, &amp; deliver</h2>
+
+            <h2><strong>OUP lexical data</strong></h2>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2>We have <strong>lots</strong> of lexical data!</h2>
+
+            <h3>Dictionaries</h3>
+
+            <h3>Thesauri</h3>
+
+            <h3>Morphology</h3>
+
+            <h3>Usage examples</h3>
+
+            <h3>etc!</h3>
+            <h4 style="margin-top: 1em;">( in various formats, mostly XML )</h4>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2>Our data is <strong>linked</strong>!</h2>
+            <h6 class="fragment">(well, a lot of it is)</h6>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2>But...</h2>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h3>Our resources are <strong>spread out</strong></h3>
+
+            <h3>&amp;</h3>
+
+            <h3>Managing links between XML docs is <strong>painful</strong></h3>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2>Also...</h2>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h3>We're delivering</h3>
+
+            <h3><strong>manual data dumps</strong></h3>
+
+            <h3><strong><i class="fa fa-thumbs-down"></i></strong></h3>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h1>Our Solution:</h1>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h1>Linked Data!</h1>
+
+            <h1 class="fragment" style="margin-top: 1em;">APIs!!</h1>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2><strong>Why Linked Data?</strong></h2>
+
+            <h3>Data integration at scale</h3>
+
+            <h3>Graph model</h3>
+
+            <h3>Linked Data principles</h3>
+
+            <h3>Inferencing</h3>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2><strong>Why APIs?</strong></h2>
+
+            <h3>Tiered access</h3>
+
+            <h3>Usage analytics</h3>
+
+            <h3>Different views on the data</h3>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h1>Our Status:</h1>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h4>We have written an</h4>
+
+            <h2><strong>Ontology</strong></h2>
+            <h4>in OWL DL</h4>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h4>We built an</h4>
+
+            <h2><strong>XML</strong><i class="fa fa-long-arrow-right"></i><strong>RDF</strong></h2>
+            <h4>transformation framework</h4>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h4>We've launched our</h4>
+
+            <h2><strong>API version 1.0</strong></h2>
+            <h4>[Swagger screenshot or summat]</h4>
+            <!--<h4 class="fragment">With some dictionary-specific endpoints to start:</h4>-->
+            <!--<div class="fragment">-->
+            <!--<h4><strong>Search</strong> headwords</h4>-->
+            <!--<h4><strong>Retrieve</strong> an entry</h4>-->
+            <!--<h4><strong>Add</strong> an entry</h4>-->
+            <!--<h4><strong>Delete</strong> an entry</h4>-->
+            <!--</div>-->
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h4>We've solicited some</h4>
+
+            <h2><strong>Early-access testing</strong></h2>
+            <h4>to kick the tires</h4>
+            <h4>on the data model & APIs</h4>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <h2><strong>Next Steps:</strong></h2>
+            <h4>Develop new API endpoints</h4>
+            <h4>Continue moving our XML data-sets into RDF</h4>
+            <h4>Increase linking within our data-sets</h4>
+            <h4>Link out to other data-sets (DBPedia, WordNet, BabelNet, etc.)</span></h4>
+        </section>
+
+        <section class="onto"><!-------------------- d3 slide ----------------->
+        <h2>This slide uses <strong>D3</strong></h2>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UhiiMa79f2I" frameborder="0"
+                    allowfullscreen></iframe>
+        </section>
+
+    </div>
+    <!-- slides -->
+</div>
+<!-- reveal -->
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {
+                src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+
+            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+<script>
+
+    var links = [
+
+        {source: "graph (en)", target: "noun", type: "lexical category"},
+        {source: "graph (en)", target: "sense_a1b2c3", type: "has sense"},
+        {source: "sense_a1b2c3", target: "kerafo (nso)", type: "has direct translation"},
+        {source: "sense_a1b2c3", target: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", type: "has example"},
+        {source: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", target: "Tsela ye nngwe ye bonolo ya go hlola kerafo ke go tsenya data ya gago ka gare ga lenaneo la sephatlalatši gomme o diriše tirišo ya sethalokerafo ya sona (nso)", type: "has direct translation"},
+        {source: "sense_a1b2c3", target: "igrafu (zu)", type: "has direct translation"},
+        {source: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", target: "Enye yezindlela ezilula zokwakha igrafu, ukufaka imininingwane ohlelweni lwespredishidi bese usebenzisa ifankshini yalo yokudweba i-grafu (zu)", type: "has direct translation"},
+        {source: "sense_a1b2c3", target: "A diagram showing the relation between variable quantities, typically of two variables, each measured along one of a pair of axes at right angles. (en)", type: "has definition"},
+        {source: "graph (en)", target: "/ɡrɑːf/", type: "has phonetics"},
+        {source: "graph (en)", target: "graphic formula", type: "derives from"},
+        {source: "graph (en)", target: "behalf (en)", type: "rhymes with"},
+        {source: "graph (en)", target: "half (en)", type: "rhymes with"},
+        {source: "graph (en)", target: "calf (en)", type: "rhymes with"},
+        {source: "sense_a1b2c3", target: "sense_a2b3c4", type: "has synonym"},
+
+
+        {source: "chart (en)", target: "noun", type: "lexical category"},
+        {source: "chart (en)", target: "sense_a2b3c4", type: "has sense"}
+
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""},
+//        {source: "", target: "", type: ""}
+
+
+//        {source: "derives From", target: "isEtymologicalRelationOf", type: "subPropertyOf"},
+//        {source: "has Antonym", target: "owl#IrreflexiveProperty", type: "type"},
+//        {source: "has Antonym", target: "owl#SymmetricProperty", type: "type"},
+//        {source: "has Antonym", target: "hasClassicalRelation", type: "subPropertyOf"},
+//        {source: "has Antonym", target: "hasSynonym", type: "propertyDisjointWith"},
+//        {source: "has Association", target: "owl#IrreflexiveProperty", type: "type"},
+//        {source: "has Association", target: "owl#SymmetricProperty", type: "type"},
+//        {source: "has Association", target: "hasNon-ClassicalRelation", type: "subPropertyOf"},
+//        {source: "has Canonical Form", target: "owl#FunctionalProperty", type: "type"},
+//        {source: "has Canonical Form", target: "hasLexicalForm", type: "subPropertyOf"}
+    ];
+
+    var nodes = {};
+
+    // Compute the distinct nodes from the links.
+    links.forEach(function (link) {
+        link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+        link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
+    });
+
+    var width = 1000,
+            height = 600;
+
+    var force = d3.layout.force()
+            .nodes(d3.values(nodes))
+            .links(links)
+            .size([width, height])
+            .linkDistance(60)
+            .charge(-300)
+            .on("tick", tick)
+            .start();
+
+    var svg = d3.select(".onto").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+    var link = svg.selectAll(".link")
+            .data(force.links())
+            .enter().append("g")
+            .attr("class", "gLink")
+            .append("line")
+            .attr("class", "link");
+
+    var node = svg.selectAll(".node")
+            .data(force.nodes())
+            .enter().append("g")
+            .attr("class", "node")
+            .on("mouseover", mouseover)
+            .on("mouseout", mouseout)
+            .call(force.drag);
+
+    node.append("circle")
+            .attr("r", 8);
+
+    node.append("text")
+            .attr("x", 12)
+            .attr("dy", ".35em")
+            .text(function (d) {
+                return d.name;
+            });
+
+    // Append text to Link edges
+    var linkText = svg.selectAll(".gLink")
+            .data(force.links())
+            .append("text")
+            .attr("x", function (d) {
+                if (d.target.x > d.source.x) {
+                    return (d.source.x + (d.target.x - d.source.x) / 2);
+                }
+                else {
+                    return (d.target.x + (d.source.x - d.target.x) / 2);
+                }
+            })
+            .attr("y", function (d) {
+                if (d.target.y > d.source.y) {
+                    return (d.source.y + (d.target.y - d.source.y) / 2);
+                }
+                else {
+                    return (d.target.y + (d.source.y - d.target.y) / 2);
+                }
+            })
+            .attr("fill", "Black")
+            .style("font", "normal 9px Arial")
+            .attr("dy", ".35em")
+            .text(function (d) {
+                return d.type;
+            });
+
+    function tick() {
+        link
+                .attr("x1", function (d) {
+                    return d.source.x;
+                })
+                .attr("y1", function (d) {
+                    return d.source.y;
+                })
+                .attr("x2", function (d) {
+                    return d.target.x;
+                })
+                .attr("y2", function (d) {
+                    return d.target.y;
+                });
+
+        node
+                .attr("transform", function (d) {
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
+
+        linkText
+                .attr("x", function (d) {
+                    if (d.target.x > d.source.x) {
+                        return (d.source.x + (d.target.x - d.source.x) / 2);
+                    }
+                    else {
+                        return (d.target.x + (d.source.x - d.target.x) / 2);
+                    }
+                })
+                .attr("y", function (d) {
+                    if (d.target.y > d.source.y) {
+                        return (d.source.y + (d.target.y - d.source.y) / 2);
+                    }
+                    else {
+                        return (d.target.y + (d.source.y - d.target.y) / 2);
+                    }
+                });
+    }
+
+
+    function mouseover() {
+        d3.select(this).select("circle").transition()
+                .duration(750)
+                .attr("r", 16);
+    }
+
+    function mouseout() {
+        d3.select(this).select("circle").transition()
+                .duration(750)
+                .attr("r", 8);
+    }
+
+</script>
+
+
+</body>
 </html>
