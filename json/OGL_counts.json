@@ -1,516 +1,666 @@
 {
-  "data-sets": [
-    {
-      "data-set type": "bilingual",
-      "date": "2008",
-      "example count": 18000,
-      "headword count": 10000,
-      "language": "Afrikaans",
-      "translation count": 16000
+  "name": "data-sets",
+  "children": [
+    { "name": "Afrikaans",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "name": "Afrikaans-English",
+          "date": "2008",
+          "exampleCount": 18000,
+          "headwordCount": 10000,
+          "translationCount": 16000
+        },
+        {
+          "dataSetType": "monolingual",
+          "name": "Afrikaans",
+          "date": "2012",
+          "exampleCount": 21000,
+          "headwordCount": 12000,
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 21000,
-      "headword count": 12000,
-      "language": "Afrikaans",
-      "translation count": 0
+      "name": "Arabic",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "name": "Arabic",
+          "date": "2001",
+          "exampleCount": 43000,
+          "headwordCount": 7000,
+          "translationCount": 0
+        },
+        {
+          "dataSetType": "bilingual",
+          "name": "Arabic-English",
+          "date": "2014",
+          "exampleCount": 69000,
+          "headwordCount": 127000,
+          "translationCount": 197000
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2001",
-      "example count": 43000,
-      "headword count": 7000,
-      "language": "Arabic",
-      "translation count": 0
+      "name": "Bulgarian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2013",
+          "exampleCount": 12000,
+          "headwordCount": 25000,
+          "name": "Bulgarian-English",
+          "translationCount": 54000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2013",
+          "exampleCount": 20000,
+          "headwordCount": 20000,
+          "name": "Bulgarian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2014",
-      "example count": 69000,
-      "headword count": 127000,
-      "language": "Arabic",
-      "translation count": 197000
+      "name": "Catalan",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2011",
+          "exampleCount": 0,
+          "headwordCount": 55000,
+          "name": "Catalan",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2013",
-      "example count": 12000,
-      "headword count": 25000,
-      "language": "Bulgarian",
-      "translation count": 54000
+      "name": "Chinese(S)",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2004",
+          "exampleCount": 0,
+          "headwordCount": 62000,
+          "name": "Chinese(S)-Korean",
+          "translationCount": 0
+        },
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2012",
+          "exampleCount": 140000,
+          "headwordCount": 48000,
+          "name": "Chinese(S)-English",
+          "translationCount": 370000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2010, 2013",
+          "exampleCount": 79000,
+          "headwordCount": 73000,
+          "name": "Chinese(S)",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2013",
-      "example count": 20000,
-      "headword count": 20000,
-      "language": "Bulgarian",
-      "translation count": 0
+      "name": "Chinese(T)",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2012",
+          "exampleCount": 140000,
+          "headwordCount": 48000,
+          "name": "Chinese(T)-English",
+          "translationCount": 370000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2007",
+          "exampleCount": 0,
+          "headwordCount": 160000,
+          "name": "Chinese(T)",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2011",
-      "example count": 0,
-      "headword count": 55000,
-      "language": "Catalan",
-      "translation count": 0
+      "name": "Croatian",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2011",
+          "exampleCount": 250000,
+          "headwordCount": 69000,
+          "name": "Croatian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2004",
-      "example count": 0,
-      "headword count": 62000,
-      "language": "Chinese (Simplified)-Korean",
-      "translation count": 0
+      "name": "Czech",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2012",
+          "exampleCount": 200000,
+          "headwordCount": 111000,
+          "name": "Czech",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2010, 2012",
-      "example count": 140000,
-      "headword count": 48000,
-      "language": "Chinese (Simplified)",
-      "translation count": 370000
+      "name": "Danish",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2010",
+          "exampleCount": 87000,
+          "headwordCount": 45000,
+          "name": "Danish",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2010, 2013",
-      "example count": 79000,
-      "headword count": 73000,
-      "language": "Chinese (Simplified)",
-      "translation count": 0
+      "name": "Dutch",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2013",
+          "exampleCount": 75000,
+          "headwordCount": 98000,
+          "name": "Dutch-English",
+          "translationCount": 218000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2010, 2013",
+          "exampleCount": 35000,
+          "headwordCount": 70000,
+          "name": "Dutch",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2010, 2012",
-      "example count": 140000,
-      "headword count": 48000,
-      "language": "Chinese (Traditional)",
-      "translation count": 370000
+      "name": "English",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2010",
+          "exampleCount": 3000,
+          "headwordCount": 53000,
+          "name": "English(SAfr)",
+          "translationCount": 0
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2010, 2013",
+          "exampleCount": 107700,
+          "headwordCount": 97900,
+          "name": "English(UK)",
+          "translationCount": 0
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2010, 2013",
+          "exampleCount": 77700,
+          "headwordCount": 92000,
+          "name": "English(US)",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 30000,
-      "headword count": 11800,
-      "language": "Chinese (Traditional)",
-      "translation count": 0
+      "name": "Finnish",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2012",
+          "exampleCount": 59000,
+          "headwordCount": 100000,
+          "name": "Finnish",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2008",
-      "example count": 66000,
-      "headword count": 50000,
-      "language": "Chinese (Traditional)",
-      "translation count": 0
+      "name": "French",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007, 2013",
+          "exampleCount": 138000,
+          "headwordCount": 86000,
+          "name": "French-English",
+          "translationCount": 550000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2012, 2013",
+          "exampleCount": 90000,
+          "headwordCount": 30000,
+          "name": "French",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2007",
-      "example count": 0,
-      "headword count": 160000,
-      "language": "Chinese (Traditional)",
-      "translation count": 0
+      "name": "German",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2008, 2013",
+          "exampleCount": 112000,
+          "headwordCount": 79000,
+          "name": "German-English",
+          "translationCount": 520000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2011, 2013",
+          "exampleCount": 128000,
+          "headwordCount": 182000,
+          "name": "German",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 0,
-      "headword count": 50000,
-      "language": "Chinese (Traditional)",
-      "translation count": 0
+      "name": "Greek",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2009",
+          "exampleCount": 150000,
+          "headwordCount": 50000,
+          "name": "Greek",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2011",
-      "example count": 250000,
-      "headword count": 69000,
-      "language": "Croatian",
-      "translation count": 0
+      "name": "Hebrew",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2004",
+          "exampleCount": 91000,
+          "headwordCount": 77000,
+          "name": "Hebrew",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 200000,
-      "headword count": 111000,
-      "language": "Czech",
-      "translation count": 0
+      "name": "Hindi",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2002",
+          "exampleCount": 30000,
+          "headwordCount": 35000,
+          "name": "Hindi-English",
+          "translationCount": 135000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2011",
+          "exampleCount": 0,
+          "headwordCount": 70000,
+          "name": "Hindi",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2010",
-      "example count": 87000,
-      "headword count": 45000,
-      "language": "Danish",
-      "translation count": 0
+      "name": "Hungarian",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2011",
+          "exampleCount": 150000,
+          "headwordCount": 75000,
+          "name": "Hungarian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2010, 2013",
-      "example count": 75000,
-      "headword count": 98000,
-      "language": "Dutch",
-      "translation count": 218000
+      "name": "Indonesian",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2008",
+          "exampleCount": 0,
+          "headwordCount": 90000,
+          "name": "Indonesian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2010, 2013",
-      "example count": 35000,
-      "headword count": 70000,
-      "language": "Dutch",
-      "translation count": 0
+      "name": "Italian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2013",
+          "exampleCount": 152000,
+          "headwordCount": 144000,
+          "name": "Italian-English",
+          "translationCount": 450000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2005, 2013",
+          "exampleCount": 68000,
+          "headwordCount": 96000,
+          "name": "Italian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2010",
-      "example count": 3000,
-      "headword count": 53000,
-      "language": "English (SA)",
-      "translation count": 0
+      "name": "Japanese",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007, 2013",
+          "exampleCount": 149000,
+          "headwordCount": 95000,
+          "name": "Japanese-English",
+          "translationCount": 250000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2010, 2013",
+          "exampleCount": 116000,
+          "headwordCount": 260000,
+          "name": "Japanese",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2010, 2013",
-      "example count": 107700,
-      "headword count": 97900,
-      "language": "English (UK)",
-      "translation count": 0
+      "name": "Korean",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "1994/2011, 2013",
+          "exampleCount": 218000,
+          "headwordCount": 300000,
+          "name": "Korean-English",
+          "translationCount": 813000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2011, 2013",
+          "exampleCount": 81000,
+          "headwordCount": 301000,
+          "name": "Korean",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2010, 2013",
-      "example count": 77700,
-      "headword count": 92000,
-      "language": "English (US)",
-      "translation count": 0
+      "name": "Latvian",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2006",
+          "exampleCount": 69000,
+          "headwordCount": 27000,
+          "name": "Latvian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 59000,
-      "headword count": 100000,
-      "language": "Finnish",
-      "translation count": 0
+      "name": "Malay",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "",
+          "exampleCount": 0,
+          "headwordCount": 77052,
+          "name": "Malay",
+          "translationCount": 0
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2005",
+          "exampleCount": 0,
+          "headwordCount": 20000,
+          "name": "Malay",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2007, 2013",
-      "example count": 138000,
-      "headword count": 86000,
-      "language": "French",
-      "translation count": 550000
+      "name": "Mongolian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2006",
+          "exampleCount": 40000,
+          "headwordCount": 28000,
+          "name": "Mongolian-English",
+          "translationCount": 135000
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2012, 2013",
-      "example count": 90000,
-      "headword count": 30000,
-      "language": "French",
-      "translation count": 0
+      "name": "Northern Sotho",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007",
+          "exampleCount": 12000,
+          "headwordCount": 10000,
+          "name": "Northern Sotho",
+          "translationCount": 18000
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2008, 2013",
-      "example count": 112000,
-      "headword count": 79000,
-      "language": "German",
-      "translation count": 520000
+      "name": "Norwegian",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2012",
+          "exampleCount": 77000,
+          "headwordCount": 77000,
+          "name": "Norwegian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2011, 2013",
-      "example count": 128000,
-      "headword count": 182000,
-      "language": "German",
-      "translation count": 0
+      "name": "Polish",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "Polish-English: 2004 | English-Polish: 2002",
+          "exampleCount": 127000,
+          "headwordCount": 116000,
+          "name": "Polish-English",
+          "translationCount": 144000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2012",
+          "exampleCount": 190000,
+          "headwordCount": 100000,
+          "name": "Polish",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2011",
-      "example count": 55000,
-      "headword count": 50000,
-      "language": "German",
-      "translation count": 0
+      "name": "Portuguese",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2015",
+          "exampleCount": 130000,
+          "headwordCount": 200000,
+          "name": "Portuguese-English",
+          "translationCount": 320000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2009",
+          "exampleCount": 53000,
+          "headwordCount": 126000,
+          "name": "Portuguese",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2009",
-      "example count": 150000,
-      "headword count": 50000,
-      "language": "Greek",
-      "translation count": 0
+      "name": "Romanian",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2012",
+          "exampleCount": 16000,
+          "headwordCount": 67000,
+          "name": "Romanian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2004",
-      "example count": 91000,
-      "headword count": 77000,
-      "language": "Hebrew",
-      "translation count": 0
+      "name": "Russian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007, 2013",
+          "exampleCount": 66000,
+          "headwordCount": 80000,
+          "name": "Russian",
+          "translationCount": 290000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2005",
+          "exampleCount": 0,
+          "headwordCount": 41000,
+          "name": "Russian",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2002",
-      "example count": 30000,
-      "headword count": 35000,
-      "language": "Hindi",
-      "translation count": 135000
+      "name": "Slovene",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2008",
+          "exampleCount": 350000,
+          "headwordCount": 95000,
+          "name": "Slovene",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2011",
-      "example count": 0,
-      "headword count": 70000,
-      "language": "Hindi",
-      "translation count": 0
+      "name": "Spanish",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2008, 2013",
+          "exampleCount": 133000,
+          "headwordCount": 105000,
+          "name": "Spanish-English",
+          "translationCount": 500000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2012, 2013",
+          "exampleCount": 7000,
+          "headwordCount": 53000,
+          "name": "Spanish",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2011",
-      "example count": 150000,
-      "headword count": 75000,
-      "language": "Hungarian",
-      "translation count": 0
+      "name": "Swedish",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2004",
+          "exampleCount": 121000,
+          "headwordCount": 68000,
+          "name": "Swedish",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2008",
-      "example count": 0,
-      "headword count": 90000,
-      "language": "Indonesian",
-      "translation count": 0
+      "name": "Thai",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007",
+          "exampleCount": 62000,
+          "headwordCount": 27000,
+          "name": "Thai-English",
+          "translationCount": 120000
+        },
+        {
+          "dataSetType": "monolingual",
+          "date": "2005",
+          "exampleCount": 17000,
+          "headwordCount": 18000,
+          "name": "Thai",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2010, 2013",
-      "example count": 152000,
-      "headword count": 144000,
-      "language": "Italian",
-      "translation count": 450000
+      "name": "Turkish",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2012",
+          "exampleCount": 25000,
+          "headwordCount": 100000,
+          "name": "Turkish",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "monolingual",
-      "date": "2005, 2013",
-      "example count": 68000,
-      "headword count": 96000,
-      "language": "Italian",
-      "translation count": 0
+      "name": "Vietnamese",
+      "children": [
+        {
+          "dataSetType": "monolingual",
+          "date": "2011",
+          "exampleCount": 67000,
+          "headwordCount": 46000,
+          "name": "Vietnamese",
+          "translationCount": 0
+        }
+      ]
     },
     {
-      "data-set type": "bilingual",
-      "date": "2007, 2013",
-      "example count": 149000,
-      "headword count": 95000,
-      "language": "Japanese",
-      "translation count": 250000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2010, 2013",
-      "example count": 116000,
-      "headword count": 260000,
-      "language": "Japanese",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2011",
-      "example count": 69000,
-      "headword count": 65000,
-      "language": "Japanese",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "1994/2011, 2013",
-      "example count": 218000,
-      "headword count": 300000,
-      "language": "Korean",
-      "translation count": 813000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2011, 2013",
-      "example count": 81000,
-      "headword count": 301000,
-      "language": "Korean",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2006",
-      "example count": 69000,
-      "headword count": 27000,
-      "language": "Latvian",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "",
-      "example count": 0,
-      "headword count": 77052,
-      "language": "Malay",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2005",
-      "example count": 0,
-      "headword count": 20000,
-      "language": "Malay",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "2006",
-      "example count": 40000,
-      "headword count": 28000,
-      "language": "Mongolian",
-      "translation count": 135000
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "2007",
-      "example count": 12000,
-      "headword count": 10000,
-      "language": "Northern Sotho",
-      "translation count": 18000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 77000,
-      "headword count": 77000,
-      "language": "Norwegian",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "Polish-English: 2004 | English-Polish: 2002",
-      "example count": 127000,
-      "headword count": 116000,
-      "language": "Polish",
-      "translation count": 144000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 190000,
-      "headword count": 100000,
-      "language": "Polish",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "2015",
-      "example count": 130000,
-      "headword count": 200000,
-      "language": "Portuguese",
-      "translation count": 320000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2009",
-      "example count": 53000,
-      "headword count": 126000,
-      "language": "Portuguese",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 16000,
-      "headword count": 67000,
-      "language": "Romanian",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "2007, 2013",
-      "example count": 66000,
-      "headword count": 80000,
-      "language": "Russian",
-      "translation count": 290000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2005",
-      "example count": 0,
-      "headword count": 41000,
-      "language": "Russian",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2008",
-      "example count": 350000,
-      "headword count": 95000,
-      "language": "Slovene",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "2008, 2013",
-      "example count": 133000,
-      "headword count": 105000,
-      "language": "Spanish",
-      "translation count": 500000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2012, 2013",
-      "example count": 7000,
-      "headword count": 53000,
-      "language": "Spanish",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2004",
-      "example count": 121000,
-      "headword count": 68000,
-      "language": "Swedish",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "2007",
-      "example count": 62000,
-      "headword count": 27000,
-      "language": "Thai",
-      "translation count": 120000
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2005",
-      "example count": 17000,
-      "headword count": 18000,
-      "language": "Thai",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2012",
-      "example count": 25000,
-      "headword count": 100000,
-      "language": "Turkish",
-      "translation count": 0
-    },
-    {
-      "data-set type": "monolingual",
-      "date": "2011",
-      "example count": 67000,
-      "headword count": 46000,
-      "language": "Vietnamese",
-      "translation count": 0
-    },
-    {
-      "data-set type": "bilingual",
-      "date": "2009, 2015",
-      "example count": 12000,
-      "headword count": 10000,
-      "language": "isiZulu",
-      "translation count": 20000
+      "name": "isiZulu",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2009, 2015",
+          "exampleCount": 12000,
+          "headwordCount": 10000,
+          "name": "isiZulu-English",
+          "translationCount": 20000
+        }
+      ]
     }
   ]
 }

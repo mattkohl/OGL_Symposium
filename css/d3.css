@@ -1,20 +1,22 @@
 .link {
-fill: none;
-stroke: #666;
-stroke-width: 1.5px;
+    fill: none;
+    stroke: #666;
+    stroke-width: 1.5px;
 }
 
 .node circle {
-fill: #ccc;
-stroke: #fff;
-stroke-width: 1.5px;
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 1.5px;
 }
 
 text {
-font: 10px sans-serif;
-pointer-events: none;
+    font: 10px sans-serif;
+    pointer-events: none;
 }
 
-.onto {
-
+#bubble svg {
+    position: fixed;
+    top: -5.5em;
+    left: -3em;
 }
