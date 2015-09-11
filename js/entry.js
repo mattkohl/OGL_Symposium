@@ -8,7 +8,7 @@
         {source: "graph (en)", target: "sense_a1b2c3", type: "has sense"},
         {source: "sense_a1b2c3", target: "kerafo (nso)", type: "has direct translation"},
         {source: "sense_a1b2c3", target: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", type: "has example"},
-        {source: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", target: "Tsela ye nngwe ye bonolo ya go hlola kerafo ke go tsenya data ya gago ka gare ga lenaneo la sephatlalatši gomme o diriše tirišo ya sethalokerafo ya sona (nso)", type: "has direct translation"},
+        {source: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", target: "Tsela ye nngwe ye bonolo ya go hlola kerafo ke go tsenya data ya gago ka gare ga lenaneo la sephatlalatï¿½i gomme o diriï¿½e tiriï¿½o ya sethalokerafo ya sona (nso)", type: "has direct translation"},
         {source: "sense_a1b2c3", target: "igrafu (zu)", type: "has direct translation"},
         {source: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", target: "Enye yezindlela ezilula zokwakha igrafu, ukufaka imininingwane ohlelweni lwespredishidi bese usebenzisa ifankshini yalo yokudweba i-grafu (zu)", type: "has direct translation"},
         {source: "sense_a1b2c3", target: "A diagram showing the relation between variable quantities, typically of two variables, each measured along one of a pair of axes at right angles. (en)", type: "has definition"},
@@ -32,18 +32,6 @@
 //        {source: "", target: "", type: ""},
 //        {source: "", target: "", type: ""},
 //        {source: "", target: "", type: ""}
-
-
-//        {source: "derives From", target: "isEtymologicalRelationOf", type: "subPropertyOf"},
-//        {source: "has Antonym", target: "owl#IrreflexiveProperty", type: "type"},
-//        {source: "has Antonym", target: "owl#SymmetricProperty", type: "type"},
-//        {source: "has Antonym", target: "hasClassicalRelation", type: "subPropertyOf"},
-//        {source: "has Antonym", target: "hasSynonym", type: "propertyDisjointWith"},
-//        {source: "has Association", target: "owl#IrreflexiveProperty", type: "type"},
-//        {source: "has Association", target: "owl#SymmetricProperty", type: "type"},
-//        {source: "has Association", target: "hasNon-ClassicalRelation", type: "subPropertyOf"},
-//        {source: "has Canonical Form", target: "owl#FunctionalProperty", type: "type"},
-//        {source: "has Canonical Form", target: "hasLexicalForm", type: "subPropertyOf"}
     ];
 
     var nodes = {};
@@ -54,8 +42,8 @@
         link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
     });
 
-    var width = 1000,
-            height = 600;
+    var width = 800,
+            height = 400;
 
     var force = d3.layout.force()
             .nodes(d3.values(nodes))
@@ -66,18 +54,18 @@
             .on("tick", tick)
             .start();
 
-    var svg = d3.select("#entry").append("svg")
+    var svgEntry = d3.select("#entry").append("svg")
             .attr("width", width)
             .attr("height", height);
 
-    var link = svg.selectAll(".link")
+    var link = svgEntry.selectAll(".link")
             .data(force.links())
             .enter().append("g")
             .attr("class", "gLink")
             .append("line")
             .attr("class", "link");
 
-    var node = svg.selectAll(".node")
+    var node = svgEntry.selectAll(".node")
             .data(force.nodes())
             .enter().append("g")
             .attr("class", "node")
@@ -96,7 +84,7 @@
             });
 
     // Append text to Link edges
-    var linkText = svg.selectAll(".gLink")
+    var linkText = svgEntry.selectAll(".gLink")
             .data(force.links())
             .append("text")
             .attr("x", function (d) {

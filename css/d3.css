@@ -1,22 +1,46 @@
-.link {
+#entry .link {
     fill: none;
     stroke: #666;
     stroke-width: 1.5px;
 }
 
-.node circle {
+#entry .node circle {
     fill: #ccc;
     stroke: #fff;
     stroke-width: 1.5px;
 }
 
-text {
+#entry text {
     font: 10px sans-serif;
     pointer-events: none;
 }
 
+#bubble text {
+    font: 14px sans-serif;
+    pointer-events: none;
+}
+
+
 #bubble svg {
     position: fixed;
-    top: -5.5em;
+    top: -15em;
     left: -3em;
+}
+
+#diffLangs {
+    position: fixed;
+    top: -5.75em;
+    left: -5em;
+}
+
+#diffLangs2 {
+    position: fixed;
+    top: -4.75em;
+    left: -5em;
+}
+
+.reveal section img {
+    background: none;
+    border: none;
+    box-shadow: none;
 }

@@ -58,8 +58,9 @@
             <h3>Lexical Engine and Platform</h3>
 
             <p>
-                <small>Presentation by <a href="http://mattkohl.com" target="_blank">Matt Kohl</a> / <a
-                        href="http://twitter.com/mattkohl" target="_blank">@mattkohl</a></small>
+                <small>
+                    <a href="http://twitter.com/mattkohl" target="_blank">Matt Kohl</a> |
+                    Team Lead</small>
             </p>
         </section>
 
@@ -73,20 +74,26 @@
             <h2><strong>OUP lexical data</strong></h2>
         </section>
 
-        <section id="bubble"><!---------------- slide ------------------------->
-            <!--<h2>We have <strong>lots</strong> of lexical data!</h2>-->
-            <!--<h3>Dictionaries</h3>-->
-            <!--<h3>Thesauri</h3>-->
-            <!--<h3>Morphology</h3>-->
-            <!--<h3>Usage examples</h3>-->
-            <!--<h3>etc!</h3>-->
-            <!--<h4 style="margin-top: 1em;">( in various formats, mostly XML )</h4>-->
-            <script src="js/bubble.js"></script>
+        <section><!---------------- slide ------------------------->
+            <h2>We have <strong>lots</strong> of lexical data!</h2>
+            <h3>Dictionaries</h3>
+            <h3>Thesauri</h3>
+            <h3>Morphology</h3>
+            <h3>Usage examples</h3>
+            <h3>etc!</h3>
+            <h4 style="margin-top: 1em;">( in various formats, mostly XML )</h4>
+        </section>
+
+        <section><!---------------- slide ------------------------->
+            <div id="bubble"/>
+            <h3 id="diffLangs">In <strong>many</strong></h3>
+            <h3 id="diffLangs2">languages</h3>
         </section>
 
         <section><!---------------- slide ------------------------->
             <h2>Our data is <strong>linked</strong>!</h2>
             <h6 class="fragment">(well, a lot of it is)</h6>
+            <div id="stickyforce"></div>
         </section>
 
         <section><!---------------- slide ------------------------->
@@ -125,14 +132,13 @@
 
         <section><!---------------- slide ------------------------->
             <h2><strong>Why Linked Data?</strong></h2>
-
             <h3>Data integration at scale</h3>
-
             <h3>Graph model</h3>
-
             <h3>Linked Data principles</h3>
-
             <h3>Inferencing</h3>
+            <div class="container">
+                <img src="images/rdf.png"/>
+            </div>
         </section>
 
         <section><!---------------- slide ------------------------->
@@ -149,10 +155,11 @@
             <h1>Our Status:</h1>
         </section>
 
-        <section id="entry"><!---------------- slide ------------------------->
+        <section><!---------------- slide ------------------------->
             <h4>We have written an</h4>
             <h2><strong>Ontology</strong></h2>
             <h4>in OWL DL</h4>
+            <div id="entry"/>
         </section>
 
         <section><!---------------- slide ------------------------->
@@ -182,6 +189,10 @@
             <h2><strong>Early-access testing</strong></h2>
             <h4>to kick the tires</h4>
             <h4>on the data model & APIs</h4>
+            <div class="container">
+                <img src="images/tire.png"/>
+                <img src="images/kick.png"/>
+            </div>
         </section>
 
         <section><!---------------- slide ------------------------->
@@ -258,5 +269,8 @@
 
 </script>
 
+<script src="js/bubble.js"></script>
+<script src="js/sticky_force.js"></script>
+<script src="js/entry.js"></script>
 </body>
 </html>

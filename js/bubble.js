@@ -11,13 +11,14 @@ var bubble = d3.layout.pack()
     .size([diameter, diameter])
     .padding(1.5);
 
-var svg = d3.select("#bubble").append("svg")
+var svgBubble = d3.select("#bubble").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
     .attr("class", "bubble");
 
 var tooltip = d3.select("#bubble")
     .append("div")
+    .attr("id", "tooltip")
     .style("position", "absolute")
     .style("z-index", "10")
     .style("visibility", "hidden")
@@ -25,13 +26,13 @@ var tooltip = d3.select("#bubble")
     .style("padding", "8px")
     .style("background-color", "rgba(0, 0, 0, 0.75)")
     .style("border-radius", "6px")
-    .style("font", "12px sans-serif")
+    .style("font", "10px sans-serif")
     .text("tooltip");
 
 d3.json("json/OGL_counts.json", function(error, root) {
   if (error) throw error;
 
-  var node = svg.selectAll(".node")
+  var node = svgBubble.selectAll(".node")
       .data(bubble.nodes(classes(root))
       .filter(function(d) { return !d.children; }))
       .enter().append("g")
@@ -44,15 +45,17 @@ d3.json("json/OGL_counts.json", function(error, root) {
   node.append("circle")
       .attr("r", function(d) { return d.r; })
       .style("fill", function(d) { return color(d.packageName); })
-      .on("mouseover", function(d) {
-              tooltip.text(d.className + ": " + format(d.value));
-              tooltip.style("visibility", "visible");
-      })
-      .on("mousemove", function() {
-          return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");
-      })
-      .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
-      .transition();
+      //.on("mouseover", function(d) {
+      //        tooltip.text(d.className + ": " + format(d.value));
+      //        tooltip.style("visibility", "visible");
+      //})
+      //.on("mousemove", function() {
+      //    var mouseCoords = d3.mouse(tooltip[0][0]);
+      //    return tooltip.attr("transform", "translate(" + (mouseCoords[0]-30)
+      //                + "," + (mouseCoords[1]-30) + ")");
+      //    //return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");
+      //})
+      .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
 
   node.append("text")
       .attr("dy", ".3em")
