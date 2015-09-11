@@ -1,41 +1,62 @@
+#stickyforce svg {
+    margin-top: -1.5em;
+}
+
+#stickyforce .link {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+#stickyforce .node {
+    cursor: move;
+    fill: #ccc;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+#stickyforce .node.fixed {
+    fill: #f00;
+}
+
 #entry .link {
     fill: none;
     stroke: #666;
     stroke-width: 1.5px;
 }
 
-#entry .node circle {
+#entry .node ellipse, circle {
     fill: #ccc;
     stroke: #fff;
+    cursor: pointer;
     stroke-width: 1.5px;
 }
 
-#entry text {
-    font: 10px sans-serif;
+#entry .node text {
+    font: 12px sans-serif;
     pointer-events: none;
+    text-anchor: middle;
 }
 
 #bubble text {
-    font: 14px sans-serif;
-    pointer-events: none;
+    font: inherit;
+    font-size: .4em;
 }
-
 
 #bubble svg {
     position: fixed;
-    top: -15em;
-    left: -3em;
+    top: -13em;
+    left: -2em;
 }
 
 #diffLangs {
     position: fixed;
-    top: -5.75em;
+    top: -6.75em;
     left: -5em;
 }
 
 #diffLangs2 {
     position: fixed;
-    top: -4.75em;
+    top: -5.75em;
     left: -5em;
 }
 
@@ -43,4 +64,38 @@
     background: none;
     border: none;
     box-shadow: none;
+}
+
+.reveal section img.db {
+    padding-left: 1em;
+}
+
+.api {
+    color: white;
+
+}
+
+.api span {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: .5em;
+    padding: .5em 2em .5em 2em;
+    border-radius: 3px;
+    margin-left: .25em;
+    margin-right: .25em;
+}
+
+#get {
+    background-color: #0f6ab4;
+}
+
+#post {
+    background-color: #10a54a;
+}
+
+#put {
+    background-color: #c5862b;
+}
+
+#delete {
+    background-color: #a41e22;
 }

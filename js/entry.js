@@ -7,12 +7,10 @@
         {source: "graph (en)", target: "noun", type: "lexical category"},
         {source: "graph (en)", target: "sense_a1b2c3", type: "has sense"},
         {source: "sense_a1b2c3", target: "kerafo (nso)", type: "has direct translation"},
-        {source: "sense_a1b2c3", target: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", type: "has example"},
-        {source: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", target: "Tsela ye nngwe ye bonolo ya go hlola kerafo ke go tsenya data ya gago ka gare ga lenaneo la sephatlalat�i gomme o diri�e tiri�o ya sethalokerafo ya sona (nso)", type: "has direct translation"},
+        {source: "sense_a1b2c3", target: "Use its graph-drawing function", type: "has example"},
         {source: "sense_a1b2c3", target: "igrafu (zu)", type: "has direct translation"},
-        {source: "One of the easiest ways to create a graph is to enter your data into a spreadsheet program and then use its graph-drawing function", target: "Enye yezindlela ezilula zokwakha igrafu, ukufaka imininingwane ohlelweni lwespredishidi bese usebenzisa ifankshini yalo yokudweba i-grafu (zu)", type: "has direct translation"},
-        {source: "sense_a1b2c3", target: "A diagram showing the relation between variable quantities, typically of two variables, each measured along one of a pair of axes at right angles. (en)", type: "has definition"},
-        {source: "graph (en)", target: "/?r??f/", type: "has phonetics"},
+        {source: "sense_a1b2c3", target: "A diagram showing the relation between variable quantities. (en)", type: "has definition"},
+        {source: "graph (en)", target: "/?raf/", type: "has phonetics"},
         {source: "graph (en)", target: "graphic formula", type: "derives from"},
         {source: "graph (en)", target: "behalf (en)", type: "rhymes with"},
         {source: "graph (en)", target: "half (en)", type: "rhymes with"},
@@ -49,8 +47,8 @@
             .nodes(d3.values(nodes))
             .links(links)
             .size([width, height])
-            .linkDistance(60)
-            .charge(-300)
+            .linkDistance(100)
+            .charge(-1000)
             .on("tick", tick)
             .start();
 
@@ -74,7 +72,7 @@
             .call(force.drag);
 
     node.append("circle")
-            .attr("r", 8);
+            .attr("r", 20);
 
     node.append("text")
             .attr("x", 12)
@@ -153,11 +151,11 @@
     function mouseover() {
         d3.select(this).select("circle").transition()
                 .duration(750)
-                .attr("r", 16);
+                .attr("r", 30);
     }
 
     function mouseout() {
         d3.select(this).select("circle").transition()
                 .duration(750)
-                .attr("r", 8);
+                .attr("r", 20);
     }

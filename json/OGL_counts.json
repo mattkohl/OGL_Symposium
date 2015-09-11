@@ -29,7 +29,7 @@
           "name": "Arabic",
           "date": "2001",
           "exampleCount": 43000,
-          "headwordCount": 7000,
+          "headwordCount": 42000,
           "translationCount": 0
         },
         {
@@ -37,7 +37,7 @@
           "name": "Arabic-English",
           "date": "2014",
           "exampleCount": 69000,
-          "headwordCount": 127000,
+          "headwordCount": 54000,
           "translationCount": 197000
         }
       ]

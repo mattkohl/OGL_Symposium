@@ -2,7 +2,7 @@
  * Created by kohlm on 10/09/2015.
  */
 
-var diameter = 1160,
+var diameter = 1000,
     format = d3.format(",d"),
     color = d3.scale.category20c();
 
@@ -40,22 +40,11 @@ d3.json("json/OGL_counts.json", function(error, root) {
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
   node.append("title")
-      .text(function(d) { return d.className + ": " + format(d.value); });
+      .text(function(d) { return d.className + ": " + format(d.value) + " entries"; });
 
   node.append("circle")
       .attr("r", function(d) { return d.r; })
-      .style("fill", function(d) { return color(d.packageName); })
-      //.on("mouseover", function(d) {
-      //        tooltip.text(d.className + ": " + format(d.value));
-      //        tooltip.style("visibility", "visible");
-      //})
-      //.on("mousemove", function() {
-      //    var mouseCoords = d3.mouse(tooltip[0][0]);
-      //    return tooltip.attr("transform", "translate(" + (mouseCoords[0]-30)
-      //                + "," + (mouseCoords[1]-30) + ")");
-      //    //return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");
-      //})
-      .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+      .style("fill", function(d) { return color(d.packageName); });
 
   node.append("text")
       .attr("dy", ".3em")
@@ -63,6 +52,7 @@ d3.json("json/OGL_counts.json", function(error, root) {
       .style("pointer-events", "none")
       .text(function(d) { return d.className.substring(0, d.r / 3); });
 });
+
 
 // Returns a flattened hierarchy containing all leaf nodes under the root.
 function classes(root) {
@@ -78,3 +68,4 @@ function classes(root) {
 }
 
 d3.select(self.frameElement).style("height", diameter + "px");
+
