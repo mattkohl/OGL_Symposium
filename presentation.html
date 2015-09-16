@@ -25,9 +25,7 @@
     <link rel="stylesheet" href="lib/css/tomorrow-night-blue.css">
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-        document.write('<link rel="stylesheet" href="css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
-    </script>
+    <!--<link rel="stylesheet" href="css/print/pdf.css">-->
 
     <!--<script>-->
     <!--if( window.location.search.match( /print-pdf/gi ) ) {-->
@@ -55,7 +53,8 @@
         <section><!---------------- slide ------------------------->
             <h1>LEAP</h1>
             <h3>Lexical Engine and Platform</h3>
-            <p><small><a href="http://twitter.com/mattkohl" target="_blank">Matt Kohl</a> | Team Lead</small></p>
+            <p style="margin-top: 1.5em;"><small><a href="http://twitter.com/mattkohl" target="_blank">Matt Kohl</a> | Team Lead</small></p>
+            <img src="images/oup.png" height="15%" width="15%" style="margin-top: .5em;"/>
         </section>
 
         <section><!---------------- slide ------------------------->
@@ -63,19 +62,27 @@
         </section>
 
         <section><!---------------- slide ------------------------->
-            <h2>Integrate, optimize, &amp; deliver</h2>
-            <h2><strong>OUP lexical data</strong></h2>
+            <h2>Integrate</h2>
+            <h2>Optimize,</h2>
+            <h2>&amp;</h2>
+            <h2>Deliver</h2>
+            <h2 style="padding-top: .5em;"><strong>OUP lexical data</strong></h2>
         </section>
 
         <section><!---------------- slide ------------------------->
-            <h2>We have <strong>lots</strong> of lexical data!</h2>
+            <h2 style="padding-bottom: .75em;">We have <strong>loads</strong>:</h2>
             <h3>Dictionaries</h3>
             <h3>Thesauri</h3>
             <h3>Morphology</h3>
             <h3>Usage examples</h3>
             <h3>etc!</h3>
-            <h4 style="margin-top: 1em;">( in various formats, mostly XML )</h4>
+            <h4 style="margin-top: 1em;">( in various formats, mostly <img src="images/xml.svg" height="50px" width="150px" style="margin-bottom: -.25em;"/> )</h4>
         </section>
+
+        <!--<section>&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; slide - NO D3 &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+            <!--<h3>In <strong>many</strong> languages</h3>-->
+            <!--<img src="images/wordcloud.png"-->
+        <!--</section>-->
 
         <section><!---------------- slide ------------------------->
             <div id="bubble"/>
@@ -84,23 +91,18 @@
         </section>
 
         <section><!---------------- slide ------------------------->
-            <h2>And it's <strong>linked</strong>!</h2>
-            <h6 class="fragment">(well, bits of it)</h6>
-            <div id="stickyforce"></div>
+            <h2 style="padding-bottom: 2em;"><span class="italic">Some</span> of the content is linked</h2>
+            <h3 class="fragment">But...</h3>
         </section>
 
         <section><!---------------- slide ------------------------->
-            <h2>But...</h2>
-        </section>
-
-        <section><!---------------- slide ------------------------->
-            <h3>Our content is <strong>siloed</strong></h3>
-            <div class="container" style="padding-top: 1em; padding-bottom: 1em;">
+            <h2>The data-sets are <strong>siloed</strong>,</h2>
+            <div class="container" style="padding-top: 1em; padding-bottom: 1.25em;">
                 <img class="db" height="200" width="200" src="images/db.png"/>
                 <img class="db" height="200" width="200" src="images/db.png"/>
                 <img class="db" height="200" width="200" src="images/db.png"/>
             </div>
-            <h3>This makes link management <strong>difficult</strong></h3>
+            <h3>&amp; managing links is <strong>difficult</strong></h3>
         </section>
 
         <section><!---------------- slide ------------------------->
@@ -108,8 +110,10 @@
         </section>
 
         <section><!---------------- slide ------------------------->
-            <h2>Our only means of delivery is</h2>
-            <h2><strong>manual data dump</strong></h2>
+            <h2>We can only deliver</h2>
+            <h3>via</h3>
+            <h2><strong>manual</strong></h2>
+            <h2><strong>data dump</strong></h2>
             <h2><strong><i class="fa fa-thumbs-down"></i></strong></h2>
         </section>
 
@@ -123,15 +127,15 @@
         </section>
 
         <section><!---------------- slide ------------------------->
-            <h2><strong>Why Linked Data?</strong></h2>
-            <h3>Data integration at scale</h3>
+            <h2 style="padding-bottom: .5em;"><strong>Why Linked Data?</strong></h2>
+            <h3>Scalable data integration</h3>
             <h3>Graph model</h3>
             <h3>Linked Data principles</h3>
             <h3>Inferencing</h3>
         </section>
 
         <section><!---------------- slide ------------------------->
-            <h2><strong>Why APIs?</strong></h2>
+            <h2 style="padding-bottom: .5em;"><strong>Why APIs ?</strong></h2>
             <h3>Tiered access</h3>
             <h3>Usage analytics</h3>
             <h3>Different views on the data</h3>
@@ -144,9 +148,16 @@
         <section><!---------------- slide ------------------------->
             <h4>We have written an</h4>
             <h2><strong>Ontology</strong></h2>
-            <h4>in OWL DL</h4>
-            <div id="entry"/>
+            <h4>in OWL DL <img src="images/owl.png" height="3%" width="3%" style="margin-bottom: -.25em; margin-top: -1em; margin-left:.5em;"></h4>
+            <div id="onto"/>
         </section>
+
+        <!--<section>&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; slide - NO D3&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+            <!--<h4>We have written an</h4>-->
+            <!--<h2><strong>Ontology</strong></h2>-->
+            <!--<h4>in OWL DL <img src="images/owl.png" height="3%" width="3%" style="margin-bottom: -.25em; margin-top: -1em; margin-left:.5em;"></h4>-->
+            <!--&lt;!&ndash;<div id="onto"/>&ndash;&gt;-->
+        <!--</section>-->
 
         <section><!---------------- slide ------------------------->
             <h3>We built an</h3>
@@ -173,27 +184,53 @@
             </div>
         </section>
 
+        <section>
+            <h4>Using these technologies</h4>
+            <div>
+                <img src="images/docker.png"/>
+                <img src="images/jenkins.png" height="10%" width="10%"/>
+                <img src="images/python.png" height="15%" width="15%"/>
+            </div>
+            <div>
+                <img src="images/flask.png"/>
+                <img src="images/elastic.png"/>
+                <img src="images/swagger.png" height="15%" width="15%"/>
+            </div>
+            <div style="padding-bottom: 1.5em;">
+                <img src="images/3scale.png" height="40%" width="40%"/>
+            </div>
+            <h4 class="fragment">( and a few others... )</h4>
+        </section>
+
         <section><!---------------- slide ------------------------->
             <h4>We've solicited some</h4>
-
             <h2><strong>Early-access testing</strong></h2>
             <h4>to kick the tires</h4>
-            <h4>on the data model & APIs</h4>
             <div class="container">
                 <img src="images/tire.png"/>
                 <img src="images/kick.png"/>
             </div>
+            <h6 style="padding-top: 1em;">Want in?</h6>
+            <h6>Let us know!</h6>
         </section>
 
         <section><!---------------- slide ------------------------->
             <h2><strong>Next Steps:</strong></h2>
             <h4>New API endpoints</h4>
             <h4>More data-sets into RDF</h4>
-            <h4>Better linking within our data-sets</h4>
-            <h4>Link out to DBPedia, WordNet, BabelNet, etc.</span></h4>
+            <h4>Improve linking within & without</h4>
+            <img src="images/dbpedia.png" height="10%" width="10%"/>
+            <img src="images/geonames.png"/>
+            <img src="images/babelnet.png" height="6%" width="6%"/>
+            <img src="images/wordnet.png" height="19%" width="19%"/>
+        </section>
+
+        <section id=""appendix><!---------------- slide ------------------------->
+            <h3>Appendix:</h3>
         </section>
 
         <section><!---------------- slide ------------------------->
+            <h4 style="margin-bottom: 2em;">A short video on the OGL project</h4>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/UhiiMa79f2I" frameborder="0" allowfullscreen></iframe>
         </section>
 
@@ -220,36 +257,24 @@
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
-            {
-                src: 'lib/js/classList.js', condition: function () {
+            { src: 'lib/js/classList.js', condition: function () {
                 return !document.body.classList;
-            }
-            },
-            {
-                src: 'plugin/markdown/marked.js', condition: function () {
+            }},
+            { src: 'plugin/markdown/marked.js', condition: function () {
                 return !!document.querySelector('[data-markdown]');
-            }
-            },
-            {
-                src: 'plugin/markdown/markdown.js', condition: function () {
+            }},
+            { src: 'plugin/markdown/markdown.js', condition: function () {
                 return !!document.querySelector('[data-markdown]');
-            }
-            },
-            {
-                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+            }},
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function () {
                 hljs.initHighlightingOnLoad();
-            }
-            },
-            {
-                src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+            }},
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
                 return !!document.body.classList;
-            }
-            },
-            {
-                src: 'plugin/notes/notes.js', async: true, condition: function () {
+            }},
+            { src: 'plugin/notes/notes.js', async: true, condition: function () {
                 return !!document.body.classList;
-            }
-            },
+            }}
 
             // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
             // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
@@ -260,7 +285,7 @@
 
 <script src="js/bubble.js"></script>
 <script src="js/sticky_force.js"></script>
-<script src="js/entry.js"></script>
+<script src="js/onto.js"></script>
 <!--<script src="js/collapsible_entry.js"></script>-->
 </body>
 </html>

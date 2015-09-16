@@ -40,8 +40,8 @@
         link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
     });
 
-    var width = 800,
-            height = 400;
+    var width = 1000,
+            height = 800;
 
     var force = d3.layout.force()
             .nodes(d3.values(nodes))
