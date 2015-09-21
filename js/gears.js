@@ -1,3 +1,8 @@
+/**
+ * Created by kohlm on 10/09/2015.
+ * based on http://bl.ocks.org/mbostock/10395901
+ **/
+
 var gwidth = 480,
     gheight = 250;
 

@@ -1,3 +1,8 @@
+/**
+ * Created by kohlm on 10/09/2015.
+ * based on http://bl.ocks.org/mbostock/4600693
+ **/
+
 var owidth = 960,
     oheight = 500;
 

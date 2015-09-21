@@ -1,8 +1,9 @@
 /**
  * Created by kohlm on 10/09/2015.
+ * Based on http://bl.ocks.org/mbostock/4063269
  */
 
-var diameter = 1000,
+var diameter = 950,
     format = d3.format(",d"),
     color = d3.scale.category20c();
 
