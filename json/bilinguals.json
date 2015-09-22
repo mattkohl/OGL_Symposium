@@ -1,0 +1,307 @@
+{
+  "name": "data-sets",
+  "children": [
+    { "name": "Afrikaans",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "name": "Afrikaans-English",
+          "langCodes": "AF-EN",
+          "date": "2008",
+          "exampleCount": 18000,
+          "headwordCount": 10000,
+          "translationCount": 16000
+        }
+      ]
+    },
+    {
+      "name": "Arabic",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "name": "Arabic-English",
+          "langCodes": "AR-EN",
+          "date": "2014",
+          "exampleCount": 69000,
+          "headwordCount": 54000,
+          "translationCount": 197000
+        }
+      ]
+    },
+    {
+      "name": "Bulgarian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2013",
+          "exampleCount": 12000,
+          "headwordCount": 25000,
+          "name": "Bulgarian-English",
+          "langCodes": "BG-EN",
+          "translationCount": 54000
+        }
+      ]
+    },
+    {
+      "name": "Chinese(S)",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2004",
+          "exampleCount": 0,
+          "headwordCount": 62000,
+          "name": "Chinese(S)-Korean",
+          "langCodes": "ZH(s)-KO",
+          "translationCount": 0
+        },
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2012",
+          "exampleCount": 140000,
+          "headwordCount": 48000,
+          "name": "Chinese(S)-English",
+          "langCodes": "ZH(s)-EN",
+          "translationCount": 370000
+        }
+      ]
+    },
+    {
+      "name": "Chinese(T)",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2012",
+          "exampleCount": 140000,
+          "headwordCount": 48000,
+          "name": "Chinese(T)-English",
+          "langCodes": "ZH(t)-EN",
+          "translationCount": 370000
+        }
+      ]
+    },
+    {
+      "name": "Dutch",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2013",
+          "exampleCount": 75000,
+          "headwordCount": 98000,
+          "name": "Dutch-English",
+          "langCodes": "NL-EN",
+          "translationCount": 218000
+        }
+      ]
+    },
+    {
+      "name": "French",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007, 2013",
+          "exampleCount": 138000,
+          "headwordCount": 86000,
+          "name": "French-English",
+          "langCodes": "FR-EN",
+          "translationCount": 550000
+        }
+      ]
+    },
+    {
+      "name": "German",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2008, 2013",
+          "exampleCount": 112000,
+          "headwordCount": 79000,
+          "name": "German-English",
+          "langCodes": "DE-EN",
+          "translationCount": 520000
+        }
+      ]
+    },
+    {
+      "name": "Hindi",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2002",
+          "exampleCount": 30000,
+          "headwordCount": 35000,
+          "name": "Hindi-English",
+          "langCodes": "HI-EN",
+          "translationCount": 135000
+        }
+      ]
+    },
+    {
+      "name": "Italian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2010, 2013",
+          "exampleCount": 152000,
+          "headwordCount": 144000,
+          "name": "Italian-English",
+          "langCodes": "IT-EN",
+          "translationCount": 450000
+        }
+      ]
+    },
+    {
+      "name": "Japanese",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007, 2013",
+          "exampleCount": 149000,
+          "headwordCount": 95000,
+          "name": "Japanese-English",
+          "langCodes": "JA-EN",
+          "translationCount": 250000
+        }
+      ]
+    },
+    {
+      "name": "Korean",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "1994/2011, 2013",
+          "exampleCount": 218000,
+          "headwordCount": 300000,
+          "name": "Korean-English",
+          "langCodes": "KO-EN",
+          "translationCount": 813000
+        }
+      ]
+    },
+    {
+      "name": "Malay",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "",
+          "exampleCount": 0,
+          "headwordCount": 77052,
+          "name": "Malay-English",
+          "langCodes": "ML-EN",
+          "translationCount": 0
+        }
+      ]
+    },
+    {
+      "name": "Mongolian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2006",
+          "exampleCount": 40000,
+          "headwordCount": 28000,
+          "name": "Mongolian-English",
+          "langCodes": "MN-EN",
+          "translationCount": 135000
+        }
+      ]
+    },
+    {
+      "name": "Northern Sotho",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007",
+          "exampleCount": 12000,
+          "headwordCount": 10000,
+          "name": "Northern Sotho-English",
+          "langCodes": "NSO-EN",
+          "translationCount": 18000
+        }
+      ]
+    },
+    {
+      "name": "Polish",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "Polish-English: 2004 | English-Polish: 2002",
+          "exampleCount": 127000,
+          "headwordCount": 116000,
+          "name": "Polish-English",
+          "langCodes": "PL-EN",
+          "translationCount": 144000
+        }
+      ]
+    },
+    {
+      "name": "Portuguese",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2015",
+          "exampleCount": 130000,
+          "headwordCount": 200000,
+          "name": "Portuguese-English",
+          "langCodes": "PO-EN",
+          "translationCount": 320000
+        }
+      ]
+    },
+    {
+      "name": "Russian",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007, 2013",
+          "exampleCount": 66000,
+          "headwordCount": 80000,
+          "name": "Russian-English",
+          "langCodes": "RU-EN",
+          "translationCount": 290000
+        }
+      ]
+    },
+    {
+      "name": "Spanish",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2008, 2013",
+          "exampleCount": 133000,
+          "headwordCount": 105000,
+          "name": "Spanish-English",
+          "langCodes": "ES-EN",
+          "translationCount": 500000
+        }
+      ]
+    },
+    {
+      "name": "Thai",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2007",
+          "exampleCount": 62000,
+          "headwordCount": 27000,
+          "name": "Thai-English",
+          "langCodes": "TH-EN",
+          "translationCount": 120000
+        }
+      ]
+    },
+    {
+      "name": "isiZulu",
+      "children": [
+        {
+          "dataSetType": "bilingual",
+          "date": "2009, 2015",
+          "exampleCount": 12000,
+          "headwordCount": 10000,
+          "name": "isiZulu-English",
+          "langCodes": "ZU",
+          "translationCount": 20000
+        }
+      ]
+    }
+  ]
+}
