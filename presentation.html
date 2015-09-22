@@ -76,7 +76,7 @@
             <h3>Thesauri</h3>
             <h3>Morphology</h3>
             <h3>Usage examples</h3>
-            <h4 style="margin-top: 1em;">etc...</h4>
+            <img src="images/open-book.png" style="margin-top: .1em; opacity: .2"/>
         </section>
 
         <!--<section>&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; slide - NO D3 &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
@@ -145,17 +145,34 @@
                 <h3>Graph model</h3>
                 <h3>Inferencing</h3>
             </section>
-            <section id="linkedDataPrinciples">
-                <h3>Linked Data Principles:</h3>
-                <div style="padding-left: 6em;">
-                    <ul>
-                        <li>Use URIs as names for things</li>
-                        <li>Use HTTP URIs so that people can look up those names</h5>
-                        <li>When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL)</li>
-                        <li>Include links to other URIs, so that they can discover more things</li>
-                    </ul>
-                    <p style="padding-top: 1em;"><small><a href="http://www.w3.org/DesignIssues/LinkedData.html">-- Tim Berners-Lee, "Design Issues: Linked Data"</a></small></p>
+            <!--<section id="linkedDataPrinciples">-->
+                <!--<h3>Linked Data Principles:</h3>-->
+                <!--<div style="padding-left: 6em;">-->
+                    <!--<ul>-->
+                        <!--<li>Use URIs as names for things</li>-->
+                        <!--<li>Use HTTP URIs so that people can look up those names</h5>-->
+                        <!--<li>When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL)</li>-->
+                        <!--<li>Include links to other URIs, so that they can discover more things</li>-->
+                    <!--</ul>-->
+                    <!--<p style="padding-top: 1em;"><small><a href="http://www.w3.org/DesignIssues/LinkedData.html">&#45;&#45; Tim Berners-Lee, "Design Issues: Linked Data"</a></small></p>-->
+                <!--</div>-->
+            <!--</section>-->
+            <section id="dictEntries">
+                <div id="ode">
+                    <h5>Oxford Dictionary of English</h5>
+                    <p class="headword">cheetah</p>
+                    <p class="partOfSpeech">noun</p>
+                    <p class="definition">A large slender spotted cat found in Africa and parts of Asia...</p>
                 </div>
+                <div id="nso" class="fragment">
+                    <h5>Oxford Bilingual School Dictionary: Northern Sotho & English</h5>
+                    <p class="headword">cheetah</p>
+                    <p class="partOfSpeech">noun</p>
+                    <p class="translation">lepogo</p>
+                </div>
+            </section>
+            <section id="dictEntries2">
+                <div id="entry"></div>
             </section>
         </section>
 
@@ -224,11 +241,14 @@
                 <img src="images/docker.png"/>
                 <img src="images/jenkins.png" height="10%" width="10%"/>
                 <img src="images/python.png" height="15%" width="15%"/>
+                <img src="images/github.png" height="15%" width="15%">
             </div>
             <div>
                 <img src="images/flask.png"/>
                 <img src="images/elastic.png"/>
                 <img src="images/swagger.png" height="15%" width="15%"/>
+
+                <img src="images/aws.png" height="25%" width="25%" style="padding-bottom: .5em;">
             </div>
             <div style="padding-bottom: 1.5em;">
                 <img src="images/jira.png" height="25%" width="25%"/>
@@ -330,5 +350,6 @@
 <script src="js/labeled_force.js"></script>
 <script src="js/onto.js"></script>
 <script src="js/gears.js"></script>
+<script src="js/entry.js"></script>
 </body>
 </html>

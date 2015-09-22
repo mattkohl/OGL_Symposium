@@ -68,9 +68,19 @@ span .s {
 }
 
 #entry .node text {
-    font: 12px sans-serif;
+    font: 20px sans-serif;
     pointer-events: none;
     text-anchor: middle;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+#entry .gLink text {
+    font: 16px sans-serif;
+    pointer-events: none;
+    text-anchor: middle;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
 }
 
 #bubble text {
@@ -138,4 +148,33 @@ span .s {
 
 #difficult {
     font-family: 'Abril Fatface', cursive;
+}
+
+#dictEntries h5 {
+    padding-top: 2em;
+}
+
+#dictEntries h5, #ode p, #nso p {
+    text-align: left;
+}
+
+#dictEntries .headword {
+    display: block;
+    font-family: Cambria, Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#dictEntries .partOfSpeech {
+    color: #707070;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dictEntries .definition, #dictEntries .translation {
+    padding-left: 1em;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
 }

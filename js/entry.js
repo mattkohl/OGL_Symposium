@@ -4,32 +4,40 @@
 
     var links = [
 
-        {source: "graph (en)", target: "noun", type: "lexical category"},
-        {source: "graph (en)", target: "sense_a1b2c3", type: "has sense"},
-        {source: "sense_a1b2c3", target: "kerafo (nso)", type: "has direct translation"},
-        {source: "sense_a1b2c3", target: "Use its graph-drawing function", type: "has example"},
-        {source: "sense_a1b2c3", target: "igrafu (zu)", type: "has direct translation"},
-        {source: "sense_a1b2c3", target: "A diagram showing the relation between variable quantities. (en)", type: "has definition"},
-        {source: "graph (en)", target: "/?raf/", type: "has phonetics"},
-        {source: "graph (en)", target: "graphic formula", type: "derives from"},
-        {source: "graph (en)", target: "behalf (en)", type: "rhymes with"},
-        {source: "graph (en)", target: "half (en)", type: "rhymes with"},
-        {source: "graph (en)", target: "calf (en)", type: "rhymes with"},
-        {source: "sense_a1b2c3", target: "sense_a2b3c4", type: "has synonym"},
+        //{source: "graph (en)", target: "noun", type: "lexical category"},
+        //{source: "graph (en)", target: "sense_a1b2c3", type: "has sense"},
+        //{source: "sense_a1b2c3", target: "kerafo (nso)", type: "has direct translation"},
+        //{source: "sense_a1b2c3", target: "Use its graph-drawing function", type: "has example"},
+        //{source: "sense_a1b2c3", target: "igrafu (zu)", type: "has direct translation"},
+        //{source: "sense_a1b2c3", target: "A diagram showing the relation between variable quantities. (en)", type: "has definition"},
+        //{source: "graph (en)", target: "/?raf/", type: "has phonetics"},
+        //{source: "graph (en)", target: "graphic formula", type: "derives from"},
+        //{source: "graph (en)", target: "behalf (en)", type: "rhymes with"},
+        //{source: "graph (en)", target: "half (en)", type: "rhymes with"},
+        //{source: "graph (en)", target: "calf (en)", type: "rhymes with"},
+        //{source: "sense_a1b2c3", target: "sense_a2b3c4", type: "has synonym"},
+        //
+        //
+        //{source: "chart (en)", target: "noun", type: "lexical category"},
+        //{source: "chart (en)", target: "sense_a2b3c4", type: "has sense"}
 
+        {source: "cheetah", target: "noun", type: "lexical category"},
+        {source: "cheetah", target: "cītā", type: "derives from"},
+        {source: "cītā", target: "चीता", type:"transliteration"},
+        {source: "cheetah", target: "English", type: "language"},
+        {source: "lepogo", target: "noun", type: "lexical category"},
+        {source: "lepogo", target: "Northern Sotho", type: "language"},
+        {source: "cheetah", target: "sense_e1", type: "has sense"},
+        {source: "sense_e1", target: "A large slender spotted cat found in Africa and parts of Asia", type: "definition"},
+        {source: "sense_e1", target: "sense_n1", type: "translation"},
+        {source: "lepogo", target: "sense_n1", type: "has sense"}
 
-        {source: "chart (en)", target: "noun", type: "lexical category"},
-        {source: "chart (en)", target: "sense_a2b3c4", type: "has sense"}
-
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""},
-//        {source: "", target: "", type: ""}
+        //{source: "", target: "", type: ""},
+        //{source: "", target: "", type: ""},
+        //{source: "", target: "", type: ""},
+        //{source: "", target: "", type: ""},
+        //{source: "", target: "", type: ""},
+        //{source: "", target: "", type: ""}
     ];
 
     var nodes = {};
@@ -40,15 +48,15 @@
         link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
     });
 
-    var width = 1000,
-            height = 800;
+    var width = 1200,
+            height = 1000;
 
     var force = d3.layout.force()
             .nodes(d3.values(nodes))
             .links(links)
             .size([width, height])
-            .linkDistance(100)
-            .charge(-1000)
+            .linkDistance(300)
+            .charge(-2000)
             .on("tick", tick)
             .start();
 
@@ -72,7 +80,8 @@
             .call(force.drag);
 
     node.append("circle")
-            .attr("r", 20);
+            .attr("r", 50)
+            .style("fill", function(d) { return color(d.name); });
 
     node.append("text")
             .attr("x", 12)
@@ -102,7 +111,6 @@
                 }
             })
             .attr("fill", "Black")
-            .style("font", "normal 9px Arial")
             .attr("dy", ".35em")
             .text(function (d) {
                 return d.type;
@@ -151,11 +159,11 @@
     function mouseover() {
         d3.select(this).select("circle").transition()
                 .duration(750)
-                .attr("r", 30);
+                .attr("r", 60);
     }
 
     function mouseout() {
         d3.select(this).select("circle").transition()
                 .duration(750)
-                .attr("r", 20);
+                .attr("r", 50);
     }

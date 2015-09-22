@@ -1,34 +1,13 @@
 {
   "nodes": [
-        {"name": "graph (en)"},
+        {"name": "cheetah (en)"},
         {"name": "sense_a1b2c3"},
-        {"name": "chart (en)"},
         {"name": "noun"},
-        {"name": "kerafo (nso)"},
-        {"name": "Use its graph-drawing function"},
-        {"name": "igrafu (zu)"},
-        {"name": "A diagram showing the relation between variable quantities. (en)"},
-        {"name": "/?raf/"},
-        {"name": "graphic formula"},
-        {"name": "behalf (en)"},
-        {"name": "half (en)"},
-        {"name": "calf (en)"},
-        {"name": "sense_a2b3c4"}
+        {"name": "lepogo (nso)"},
+        {"name": "A large slender spotted cat found in Africa and parts of Asia"}
   ],
   "links": [
-        {"source": "graph (en)", "target": "noun", "type": "lexical category"},
-        {"source": "graph (en)", "target": "sense_a1b2c3", "type": "has sense"},
-        {"source": "sense_a1b2c3", "target": "kerafo (nso)", "type": "has direct translation"},
-        {"source": "sense_a1b2c3", "target": "Use its graph-drawing function", "type": "has example"},
-        {"source": "sense_a1b2c3", "target": "igrafu (zu)", "type": "has direct translation"},
-        {"source": "sense_a1b2c3", "target": "A diagram showing the relation between variable quantities. (en)", "type": "has definition"},
-        {"source": "graph (en)", "target": "/?raf/", "type": "has phonetics"},
-        {"source": "graph (en)", "target": "graphic formula", "type": "derives from"},
-        {"source": "graph (en)", "target": "behalf (en)", "type": "rhymes with"},
-        {"source": "graph (en)", "target": "half (en)", "type": "rhymes with"},
-        {"source": "graph (en)", "target": "calf (en)", "type": "rhymes with"},
-        {"source": "sense_a1b2c3", "target": "sense_a2b3c4", "type": "has synonym"},
-        {"source": "chart (en)", "target": "noun", "type": "lexical category"},
-        {"source": "chart (en)", "target": "sense_a2b3c4", "type": "has sense"}
+        {"source": "cheetah (en)", "target": "noun", "type": "lexical category"},
+        {"source": "cheetah (en)", "target": "sense_a1b2c3", "type": "has sense"}
   ]
 }
