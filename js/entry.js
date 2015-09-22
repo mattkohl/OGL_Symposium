@@ -4,26 +4,8 @@
 
     var links = [
 
-        //{source: "graph (en)", target: "noun", type: "lexical category"},
-        //{source: "graph (en)", target: "sense_a1b2c3", type: "has sense"},
-        //{source: "sense_a1b2c3", target: "kerafo (nso)", type: "has direct translation"},
-        //{source: "sense_a1b2c3", target: "Use its graph-drawing function", type: "has example"},
-        //{source: "sense_a1b2c3", target: "igrafu (zu)", type: "has direct translation"},
-        //{source: "sense_a1b2c3", target: "A diagram showing the relation between variable quantities. (en)", type: "has definition"},
-        //{source: "graph (en)", target: "/?raf/", type: "has phonetics"},
-        //{source: "graph (en)", target: "graphic formula", type: "derives from"},
-        //{source: "graph (en)", target: "behalf (en)", type: "rhymes with"},
-        //{source: "graph (en)", target: "half (en)", type: "rhymes with"},
-        //{source: "graph (en)", target: "calf (en)", type: "rhymes with"},
-        //{source: "sense_a1b2c3", target: "sense_a2b3c4", type: "has synonym"},
-        //
-        //
-        //{source: "chart (en)", target: "noun", type: "lexical category"},
-        //{source: "chart (en)", target: "sense_a2b3c4", type: "has sense"}
-
         {source: "cheetah", target: "noun", type: "lexical category"},
         {source: "cheetah", target: "cītā", type: "derives from"},
-        {source: "cītā", target: "चीता", type:"transliteration"},
         {source: "cheetah", target: "English", type: "language"},
         {source: "lepogo", target: "noun", type: "lexical category"},
         {source: "lepogo", target: "Northern Sotho", type: "language"},
@@ -32,12 +14,6 @@
         {source: "sense_e1", target: "sense_n1", type: "translation"},
         {source: "lepogo", target: "sense_n1", type: "has sense"}
 
-        //{source: "", target: "", type: ""},
-        //{source: "", target: "", type: ""},
-        //{source: "", target: "", type: ""},
-        //{source: "", target: "", type: ""},
-        //{source: "", target: "", type: ""},
-        //{source: "", target: "", type: ""}
     ];
 
     var nodes = {};
