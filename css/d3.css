@@ -51,7 +51,8 @@ span .s {
 }
 
 #entry svg {
-    margin-top: -6.5em;
+    margin-top: -2.5em;
+    margin-left: -5em;
 }
 
 #entry .link {
@@ -70,7 +71,6 @@ span .s {
 #entry .node text {
     font: 20px sans-serif;
     pointer-events: none;
-    text-anchor: middle;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
 }
@@ -150,31 +150,43 @@ span .s {
     font-family: 'Abril Fatface', cursive;
 }
 
-#dictEntries h5 {
+.dictEntries h5 {
     padding-top: 2em;
 }
 
-#dictEntries h5, #ode p, #nso p {
+.dictEntries {
     text-align: left;
 }
 
-#dictEntries .headword {
+.dictEntries div {
+    padding-left: 2em;
+}
+
+.dictEntries #mergedEntry {
+    text-align: center;
+}
+
+.dictEntries .headword {
     display: block;
     font-family: Cambria, Georgia, "Times New Roman", serif;
-    font-size: 36px;
+    font-size: 1.25em;
     font-weight: bold;
 }
 
-#dictEntries .partOfSpeech {
+.dictEntries .partOfSpeech {
     color: #707070;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#dictEntries .definition, #dictEntries .translation {
+.dictEntries .definition, .dictEntries .translation {
     padding-left: 1em;
     margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 21px;
+    font-size: .8em;
+}
+
+.dictEntries .definition {
+    margin-bottom: 20px;
 }

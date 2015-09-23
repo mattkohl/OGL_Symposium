@@ -17,7 +17,7 @@ var svgBubble = d3.select("#bubble").append("svg")
     .attr("height", diameter)
     .attr("class", "bubble");
 
-d3.json("json/monolinguals.json", function(error, root) {
+d3.json("json/OGL_counts.json", function(error, root) {
   if (error) throw error;
 
   var node = svgBubble.selectAll(".node")
@@ -40,7 +40,7 @@ d3.json("json/monolinguals.json", function(error, root) {
       .style("font-size", function(d) { return (Math.min(2 * d.r, (2 * d.r - 8) / this.getComputedTextLength() * 24)) / 4.5 + "px"; })
       .style("pointer-events", "none")
       .style("font-family", "Quicksand, sans-serif")
-      .text(function(d) { return d.className.substring(0, d.r / 4); });
+      .text(function(d) { return d.className.substring(0, d.r / 3); });
 });
 
 
@@ -50,7 +50,7 @@ function classes(root) {
 
   function recurse(name, node) {
     if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
-    else classes.push({packageName: name, className: node.name, value: node.headwordCount});
+    else classes.push({packageName: name, className: node.langCodes, value: node.headwordCount});
   }
 
   recurse(null, root);

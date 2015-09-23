@@ -97,7 +97,7 @@
 
         <section><!---------------- slide ------------------------->
             <h2 style="padding-bottom: .5em;">Some of which is</h2>
-            <h2><strong>linked</strong></h2>
+            <h2 style="margin-bottom: -.2em;"><strong>linked</strong></h2>
             <h3 class="fragment" style="margin-top: 1.5em;">But...</h3>
         </section>
 
@@ -157,21 +157,38 @@
                     <!--<p style="padding-top: 1em;"><small><a href="http://www.w3.org/DesignIssues/LinkedData.html">&#45;&#45; Tim Berners-Lee, "Design Issues: Linked Data"</a></small></p>-->
                 <!--</div>-->
             <!--</section>-->
-            <section id="dictEntries">
-                <div id="ode">
-                    <h5>Oxford Dictionary of English</h5>
-                    <p class="headword">cheetah</p>
+            <section class="dictEntries">
+                <div id="ode" style="margin-top: -5em;">
+                    <h5>English monolingual</h5>
+                    <p class="headword">lunch</p>
                     <p class="partOfSpeech">noun</p>
-                    <p class="definition">A large slender spotted cat found in Africa and parts of Asia...</p>
+                    <p class="definition">A meal eaten in the middle of the day...</p>
                 </div>
                 <div id="nso" class="fragment">
-                    <h5>Oxford Bilingual School Dictionary: Northern Sotho & English</h5>
-                    <p class="headword">cheetah</p>
+                    <h5>English-Northern Sotho bilingual</h5>
+                    <p class="headword">lunch</p>
                     <p class="partOfSpeech">noun</p>
-                    <p class="translation">lepogo</p>
+                    <p class="translation">letena</p>
+                </div>
+                <div id="nso" class="fragment">
+                    <h5>English-isiZulu bilingual</h5>
+                    <p class="headword">lunch</p>
+                    <p class="partOfSpeech">noun</p>
+                    <p class="translation">isidlo sasemini</p>
                 </div>
             </section>
-            <section id="dictEntries2">
+            <section class="dictEntries">
+                <div id="mergedEntry">
+                    <p class="headword">lunch</p>
+                    <p class="partOfSpeech">noun</p>
+                    <p class="definition">A meal eaten in the middle of the day...</p>
+                    <p class="fragment translation">letena (Northern Sotho)</p>
+                    <p class="fragment translation">isidlo sasemini (isiZulu)</p>
+                    <p class="fragment translation" style="color: blue"><strong>megh (Klingon)</strong></p>
+                </div>
+            </section>
+            <section id="dictEntriesGraph">
+                <h5 style="margin-top: -4em;"><strong>lunch (en) - letena (nso) - isidlo sasemini (zu)</strong></h5>
                 <div id="entry"></div>
             </section>
         </section>

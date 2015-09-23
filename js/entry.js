@@ -4,15 +4,19 @@
 
     var links = [
 
-        {source: "cheetah", target: "noun", type: "lexical category"},
-        {source: "cheetah", target: "cītā", type: "derives from"},
-        {source: "cheetah", target: "English", type: "language"},
-        {source: "lepogo", target: "noun", type: "lexical category"},
-        {source: "lepogo", target: "Northern Sotho", type: "language"},
-        {source: "cheetah", target: "sense_e1", type: "has sense"},
-        {source: "sense_e1", target: "A large slender spotted cat found in Africa and parts of Asia", type: "definition"},
-        {source: "sense_e1", target: "sense_n1", type: "translation"},
-        {source: "lepogo", target: "sense_n1", type: "has sense"}
+        {source: "isidlo sasemini", target: "noun", type: "part of speech"},
+        {source: "lunch", target: "noun", type: "part of speech"},
+        {source: "isidlo sasemini", target: "isiZulu", type: "language"},
+        {source: "lunch", target: "English", type: "language"},
+        {source: "letena", target: "noun", type: "part of speech"},
+        {source: "letena", target: "Northern Sotho", type: "language"},
+        {source: "lunch", target: "sense_lunch", type:"sense"},
+        {source: "letena", target: "sense_letena", type: "sense"},
+        {source: "isidlo sasemini", target: "sense_isidlo sasemini", type: "sense"},
+        {source: "sense_letena", target: "sense_lunch", type: "translation"},
+        {source: "sense_letena", target: "sense_isidlo sasemini", type: "translation"},
+        {source: "sense_lunch", target: "sense_isidlo sasemini", type: "translation"},
+        {source: "sense_lunch", target: "A meal eaten in the middle of the day...", type: "definition"}
 
     ];
 
@@ -24,15 +28,15 @@
         link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
     });
 
-    var width = 1200,
-            height = 1000;
+    var width = 1400,
+            height = 900;
 
     var force = d3.layout.force()
             .nodes(d3.values(nodes))
             .links(links)
             .size([width, height])
-            .linkDistance(300)
-            .charge(-2000)
+            .linkDistance(200)
+            .charge(-3500)
             .on("tick", tick)
             .start();
 
@@ -56,7 +60,7 @@
             .call(force.drag);
 
     node.append("circle")
-            .attr("r", 50)
+            .attr("r", 20)
             .style("fill", function(d) { return color(d.name); });
 
     node.append("text")
@@ -135,11 +139,11 @@
     function mouseover() {
         d3.select(this).select("circle").transition()
                 .duration(750)
-                .attr("r", 60);
+                .attr("r", 30);
     }
 
     function mouseout() {
         d3.select(this).select("circle").transition()
                 .duration(750)
-                .attr("r", 50);
+                .attr("r", 20);
     }
