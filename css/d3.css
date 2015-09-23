@@ -163,7 +163,7 @@ span .s {
 }
 
 .dictEntries #mergedEntry {
-    text-align: center;
+
 }
 
 .dictEntries .headword {
@@ -189,4 +189,10 @@ span .s {
 
 .dictEntries .definition {
     margin-bottom: 20px;
+}
+
+#klingon {
+    margin-top: -1em;
+    margin-bottom: -.1em;
+    margin-right: -.1em;
 }
