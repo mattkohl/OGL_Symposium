@@ -14,7 +14,7 @@
         {source: "letena", target: "sense_letena", type: "sense"},
         {source: "isidlo sasemini", target: "sense_isidlo sasemini", type: "sense"},
         {source: "sense_letena", target: "sense_lunch", type: "translation"},
-        {source: "sense_letena", target: "sense_isidlo sasemini", type: "translation"},
+        {source: "sense_lunch", target: "sense_isidlo sasemini", type: "translation"},
         {source: "sense_lunch", target: "sense_isidlo sasemini", type: "translation"},
         {source: "sense_lunch", target: "A meal eaten in the middle of the day...", type: "definition"}
 

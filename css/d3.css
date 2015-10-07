@@ -51,7 +51,7 @@ span .s {
 }
 
 #entry svg {
-    margin-top: -2.5em;
+    margin-top: 0;
     margin-left: -5em;
 }
 
@@ -69,14 +69,14 @@ span .s {
 }
 
 #entry .node text {
-    font: 20px sans-serif;
+    font: 24px sans-serif;
     pointer-events: none;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
 }
 
 #entry .gLink text {
-    font: 16px sans-serif;
+    font: 20px sans-serif;
     pointer-events: none;
     text-anchor: middle;
     font-family: "Quicksand", sans-serif;
