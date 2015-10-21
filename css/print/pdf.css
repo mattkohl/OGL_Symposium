@@ -117,6 +117,11 @@ ul, ol, div, p {
 	    -ms-perspective-origin: 50% 50%;
 	        perspective-origin: 50% 50%;
 }
+
+#apiImage {
+	margin-top: -2em;
+}
+
 .reveal .slides section {
 
 	page-break-after: always !important;
@@ -130,7 +135,7 @@ ul, ol, div, p {
 	overflow: hidden !important;
 
 	left: 0 !important;
-	top: 0 !important;
+	top: auto;
 	margin: 0 !important;
 	padding: 2cm 2cm 0 2cm !important;
 	box-sizing: border-box !important;
