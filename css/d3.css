@@ -91,19 +91,19 @@ span .s {
 #bubble svg {
     position: fixed;
     top: -9em;
-    left: 0;
+    left: 3em;
 }
 
 #diffLangs {
     position: fixed;
     top: -4.75em;
-    left: -4em;
+    left: -2em;
 }
 
 #diffLangs2 {
     position: fixed;
     top: -3.75em;
-    left: -4em;
+    left: -2em;
 }
 
 .reveal section img {
