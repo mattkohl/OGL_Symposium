@@ -3,7 +3,7 @@
  * Based on http://bl.ocks.org/mbostock/4063269
  */
 
-var diameter = 950,
+var diameter = 750,
     format = d3.format(",d"),
     color = d3.scale.category20c();
 
@@ -37,7 +37,7 @@ d3.json("json/OGL_counts.json", function(error, root) {
   node.append("text")
       .attr("dy", ".3em")
       .style("text-anchor", "middle")
-      .style("font-size", function(d) { return (Math.min(2 * d.r, (2 * d.r - 8) / this.getComputedTextLength() * 24)) / 4.5 + "px"; })
+      .style("font-size", function(d) { return (Math.min(2 * d.r, (2 * d.r - 8) / this.getComputedTextLength() * 24)) / 3.8 + "px"; })
       .style("pointer-events", "none")
       .style("font-family", "Quicksand, sans-serif")
       .text(function(d) { return d.className.substring(0, d.r / 3); });

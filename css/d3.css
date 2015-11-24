@@ -85,25 +85,25 @@ span .s {
 
 #bubble text {
     font: inherit;
-    font-size: .4em;
+    font-size: .7em;
 }
 
 #bubble svg {
     position: fixed;
-    top: -12em;
+    top: -9em;
     left: 0;
 }
 
 #diffLangs {
     position: fixed;
     top: -4.75em;
-    left: -6em;
+    left: -4em;
 }
 
 #diffLangs2 {
     position: fixed;
     top: -3.75em;
-    left: -6em;
+    left: -4em;
 }
 
 .reveal section img {
